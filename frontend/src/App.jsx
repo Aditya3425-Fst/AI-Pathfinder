@@ -1,26 +1,29 @@
 import React from 'react';
-import { Header } from './components/layout/Header';
-import { Footer } from './components/layout/Footer';
-import { Hero } from './components/sections/Hero';
-import { Features } from './components/sections/Features';
-import { Testimonials } from './components/sections/Testimonials';
-import { Pricing } from './components/sections/Pricing';
-import { FAQ } from './components/sections/FAQ';
-
-function App() {
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from '../src/components/layout/Header';
+import HomePage from '../src/pages/HomePage';
+import SkillTestPage from '../src/pages/SkillTestPage';
+import DashboardPage from '../src/pages/DashboardPage';
+import LearningPathPage from '../src/pages/LearningPathPage';
+import SignUpPage from '../src/pages/SignUpPage';
+import SignInPage from '../src/pages/SignInPage';
+const App = () => {
   return (
-    <div className="min-h-screen bg-white">
+    <Router>
       <Header />
-      <main>
-        <Hero />
-        <Features />
-        <Testimonials />
-        <Pricing />
-        <FAQ />
-      </main>
-      <Footer />
-    </div>
+      
+     
+        <Routes>
+          <Route path="/" element={< HomePage />} />
+          <Route path="/skill-test" element={<SkillTestPage />} />
+          <Route path="/dashboard" element={<DashboardPage />} />
+          <Route path="/learning-path" element={<LearningPathPage />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/signin" element={<SignInPage />} />
+        </Routes>
+     
+    </Router>
   );
-}
+};
 
 export default App;

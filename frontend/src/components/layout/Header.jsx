@@ -1,27 +1,56 @@
 import React from 'react';
-import { GraduationCap } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import { FiLogIn } from 'react-icons/fi'; // Importing a login icon from react-icons
 
-export function Header() {
+export const Header = () => {
   return (
-    <header className="fixed top-0 w-full bg-white shadow-sm z-50">
-      <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+    <header className="bg-blue-600 text-white p-4 shadow-md">
+      <div className="container mx-auto flex justify-between items-center">
+        {/* Branding */}
         <div className="flex items-center space-x-2">
-          <GraduationCap className="h-8 w-8 text-blue-600" />
-          <span className="text-xl font-bold text-gray-800">AI Pathfinder</span>
+          <img
+            src="/assets/pathfinder.png"
+            alt="Logo"
+            className="h-10 w-10"
+          />
+          <span className="text-lg font-bold">AI Pathfinder</span>
         </div>
-        <nav className="hidden md:flex items-center space-x-8">
-          <a href="#" className="text-gray-600 hover:text-blue-600">Home</a>
-          <a href="#" className="text-gray-600 hover:text-blue-600">About</a>
-          <a href="#" className="text-gray-600 hover:text-blue-600">Courses</a>
-          <a href="#" className="text-gray-600 hover:text-blue-600">Contact</a>
+
+        {/* Navigation Links */}
+        <nav className="flex items-center space-x-4">
+          <Link
+            to="/"
+            className="hover:text-blue-300 transition duration-300">
+            Home
+          </Link>
+          <Link
+            to="/skill-test"
+            className="hover:text-blue-300 transition duration-300">
+            Skill Test
+          </Link>
+          <Link
+            to="/dashboard"
+            className="hover:text-blue-300 transition duration-300">
+            Dashboard
+          </Link>
+          <Link
+            to="/learning-path"
+            className="hover:text-blue-300 transition duration-300">
+            Learning Path
+          </Link>
+
+          {/* Login Icon */}
+          <Link
+            to="/signin"
+            className="flex items-center space-x-1 hover:text-blue-300 transition duration-300"
+          >
+            <FiLogIn className="text-xl" />
+            <span>Login</span>
+          </Link>
         </nav>
-        <div className="flex items-center space-x-4">
-          <button className="text-gray-600 hover:text-blue-600">Log In</button>
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
-            Start Free Trial
-          </button>
-        </div>
       </div>
     </header>
   );
-}
+};
+
+export default Header;
