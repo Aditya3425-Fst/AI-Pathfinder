@@ -1,70 +1,199 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Bridging Skill Gaps: An AI-Powered Path to Career Success
 
-In the project directory, you can run:
+# Introduction
 
-### `npm start`
+In today’s rapidly evolving job market, students often face challenges in aligning their current skills with their desired career aspirations. The need for personalized, actionable, and dynamic guidance has never been greater. Our AI-powered platform is designed to empower students by identifying their unique strengths and areas for improvement, bridging the gap between where they are and where they want to be in their professional journey. By assessing individual skillsets, providing tailored course recommendations, and delivering specific interventions such as skill-building activities and actionable feedback, the platform ensures a structured and goal-oriented learning experience. It not only tracks progress through periodic assessments but also adapts to career trends, helping students stay ahead in their field and enhancing their employability. This innovative approach fosters confidence and equips students with the tools they need to achieve their ambitions effectively.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Feature: Personalized Skill Assessment and Learning Paths
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Our platform provides a Personalized Skill Assessment and Learning Paths feature that uses cutting-edge AI algorithms to evaluate a student's existing skills and career aspirations. This feature identifies specific areas for improvement and creates a tailored learning path that aligns with the student's goals.
 
-### `npm test`
+Key highlights of this feature include:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Comprehensive Skill Evaluation: A detailed analysis of the student's current abilities to pinpoint strengths and gaps.
+- Goal-Oriented Learning Paths: Customized paths designed to bridge skill gaps and guide students toward their career objectives.
+- Dynamic Adaptation: Learning paths adapt based on progress, career trends, and evolving job market requirements.
+- Efficiency and Focus: Ensures students invest time and effort in skill-building activities that directly contribute to their aspirations.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Project Structure
 
-### `npm run eject`
+## Frontend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The frontend is responsible for the user interface and user experience. Built with React, it includes components for each feature.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    my-react-app/
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ├── src/
+    │   ── components/
+    │   │   ├── Header/
+    │   │   │   └── Header.jsx
+    │   │   ├── Footer/
+    │   │   │   └── Footer.jsx
+    │   │   ├── FormInput/
+    │   │   │   └── FormInput.jsx
+    │   │   ├── Button/
+    │       │   │   └── Button.jsx
+    │   │   ├── StudentSkillsAssessment/
+    │   │   │   └── StudentSkillsAssessment.jsx
+    │   │   ├── GapAnalysis/
+    │   │   │   └── GapAnalysis.jsx
+    │   │   ├── PersonalizedLearningPath/
+    │   │   │   └── PersonalizedLearningPath.jsx
+    │   │   ├── TailoredCourseSuggestions/
+    │   │   │   └── TailoredCourseSuggestions.jsx
+    │   │   ├── CareerTrendsAnalysis/
+    │   │   │   └── CareerTrendsAnalysis.jsx
+    │   │   ├── TargetedSkillBuildingActivities/
+    │   │   │   └── TargetedSkillBuildingActivities.jsx
+    │   │   ├── ActionableFeedback/
+    │   │   │   └── ActionableFeedback.jsx
+    │   │   ├── PeriodicProgressAssessments/
+    │   │   │   └── PeriodicProgressAssessments.jsx
+    │   │   ├── ImprovedEmployability/
+    │   │   │   └── ImprovedEmployability.jsx
+    │   ├── pages/
+    │   │   ├── HomePage/
+    │   │   │   └── HomePage.jsx
+    │   │   ├── SkillTestPage/
+    │   │   │   └── SkillTestPage.jsx
+    │   │   ├── DashboardPage/
+    │   │   │   └── DashboardPage.jsx
+    │   │   ├── SignUpPage/
+    │   │   │   └── SignUpPage.jsx
+    │   │   ├── SignInPage/
+    │   │   │   └── SignInPage.jsx
+    │   │   ├── LearningPathPage/
+    │   │   │   └── LearningPathPage.jsx
+    │   ├── styles/
+    │   │   ├── index.css
+    │   ├── utils/
+    │   │   └── helpers.js
+    │   ├── App.jsx
+    │   ├── App.css
+    │   ├── index.js
+    │   └── index.css
+    ├── .gitignore
+    ├── package.json
+    └── README.md
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Backend
 
-## Learn More
+The backend handles server-side logic, database management, and business logic. Built with Node.js and Express .
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    my-backend/
+    ├── controllers/
+    │   ├── authController.js
+    │   ├── studentSkillsController.js
+    │   ├── learningPathController.js
+    │   ├── feedbackController.js
+    │   ├── progressController.js
+    │   └── employabilityController.js
+    ├── models/
+    │   ├── User.js
+    │   ├── SkillAssessment.js
+    │   ├── LearningPath.js
+    │   ├── Feedback.js
+    │   ├── Progress.js
+    │   └── Employability.js
+    ├── routes/
+    │   ├── authRoutes.js
+    │   ├── studentSkillsRoutes.js
+    │   ├── learningPathRoutes.js
+    │   ├── feedbackRoutes.js
+    │   ├── progressRoutes.js
+    │   └── employabilityRoutes.js
+    ├── middlewares/
+    │   ├── authMiddleware.js
+    │   ├── errorHandler.js
+    │   └── validationMiddleware.js
+    ├── utils/
+    │   ├── helpers.js
+    │   ├── db.js
+    │   └── logger.js
+    ├── config/
+    │   ├── dotenv.config.js
+    │   └── database.config.js
+    ├── validations/
+    │   ├── authValidation.js
+    │   ├── skillAssessmentValidation.js
+    │   ├── learningPathValidation.js
+    │   ├── feedbackValidation.js
+    │   └── progressValidation.js
+    ├── tests/
+    │   ├── controllers/
+    │   ├── models/
+    │   └── routes/
+    ├── public/
+    │   └── assets/
+    ├── app.js
+    ├── server.js
+    ├── package.json
+    ├── .gitignore
+    └── README.md
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+# Configuration and Utilities
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+## Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+**Client:** React, Redux, TailwindCSS
 
-### `npm run build` fails to minify
+**Server:** Node, Express
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+**Database:** Mongodb
+
+
+
+## Installation
+
+Install my-project with npm
+
+```bash
+ git clone https://github.com/Aditya3425-Fst/AI-Pathfinder.git
+ cd AI Pathfinder
+ npm install
+
+```
+    
+## Run Locally
+
+Start the frontend application
+
+```bash
+  cd frontend
+  npm run dev
+```
+
+Start the backend server
+
+```bash
+  cd backend
+  node server.js
+```
+
+
+## Badges
+
+Add badges from somewhere like: [shields.io](https://shields.io/)
+
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
+[![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
+[![AGPL License](https://img.shields.io/badge/license-AGPL-blue.svg)](http://www.gnu.org/licenses/agpl-3.0)
+
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
