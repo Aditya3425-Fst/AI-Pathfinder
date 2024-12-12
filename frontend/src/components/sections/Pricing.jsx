@@ -32,13 +32,13 @@ export function Pricing() {
         <h2 className="text-3xl font-bold text-center mb-12">Flexible Pricing Plans</h2>
         <div className="grid md:grid-cols-3 gap-8">
           {plans.map((plan, index) => (
-            <div
+            <a
               key={index}
-              className={`rounded-lg p-8 ${
-                plan.highlighted
-                  ? 'bg-blue-600 text-white shadow-xl scale-105'
-                  : 'bg-gray-50'
-              }`}
+              href="#"
+              className={`block rounded-lg p-8 transition-transform transform hover:scale-105 hover:shadow-2xl ${plan.highlighted
+                  ? 'bg-blue-600 text-white shadow-xl'
+                  : 'bg-gray-50 hover:bg-gray-100'
+                }`}
             >
               <h3 className="text-xl font-semibold mb-4">{plan.name}</h3>
               <div className="mb-6">
@@ -54,15 +54,14 @@ export function Pricing() {
                 ))}
               </ul>
               <button
-                className={`w-full py-2 rounded-lg ${
-                  plan.highlighted
+                className={`w-full py-2 rounded-lg ${plan.highlighted
                     ? 'bg-white text-blue-600 hover:bg-gray-100'
                     : 'bg-blue-600 text-white hover:bg-blue-700'
-                }`}
+                  }`}
               >
                 {plan.buttonText}
               </button>
-            </div>
+            </a>
           ))}
         </div>
       </div>
