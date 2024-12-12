@@ -1,0 +1,74 @@
+{
+  "fields": {
+    "backend": {
+      "questions": [
+        "What is Node.js and how does it work?",
+        "Explain the difference between synchronous and asynchronous programming in Node.js.",
+        "What are middleware functions in Express?",
+        "How do you handle errors in Express applications?",
+        "What is the purpose of MongoDB, and how is it different from SQL databases?",
+        "Explain the concept of RESTful APIs.",
+        "How do you ensure secure API communication?",
+        "What is CORS and why is it important?",
+        "How do you implement authentication in a Node.js application?",
+        "What is the event loop in Node.js?"
+      ]
+    },
+    "frontend": {
+      "questions": [
+        "What is the difference between React and traditional JavaScript?",
+        "Explain the virtual DOM in React.",
+        "What are React Hooks and why are they used?",
+        "How do you manage state in a React application?",
+        "What is the role of JSX in React?",
+        "What is the purpose of Tailwind CSS and how does it differ from regular CSS?",
+        "How do you optimize a React application for performance?",
+        "What is the difference between a class component and a functional component in React?",
+        "How do you handle forms in React?",
+        "What is the purpose of React Router?"
+      ]
+    },
+    "database": {
+      "questions": [
+        "What are the differences between SQL and NoSQL databases?",
+        "How do you design a database schema for a large application?",
+        "What are primary and foreign keys in relational databases?",
+        "Explain normalization and denormalization with examples.",
+        "How do you perform indexing in a database and why is it important?",
+        "What are ACID properties in databases?",
+        "What is a transaction in a database, and how do you manage it?",
+        "How do you optimize database queries for better performance?",
+        "What is the difference between a database view and a table?",
+        "Explain the concept of replication in databases."
+      ]
+    },
+    "devops": {
+      "questions": [
+        "What is the purpose of CI/CD pipelines in DevOps?",
+        "How do you automate deployments using tools like Jenkins or GitHub Actions?",
+        "What is Infrastructure as Code (IaC), and how does it work?",
+        "Explain the differences between Docker and Kubernetes.",
+        "How do you monitor application performance in production?",
+        "What are the advantages of using version control systems like Git?",
+        "What is a load balancer, and how is it used in DevOps?",
+        "Explain the concept of blue-green deployments.",
+        "What are common security practices in DevOps?",
+        "How do you handle scalability in cloud-based applications?"
+      ]
+    },
+    "ui_ux_design": {
+      "questions": [
+        "What is the difference between UX and UI design?",
+        "Explain the importance of user research in design.",
+        "How do you conduct usability testing?",
+        "What are some popular tools used for UI/UX design?",
+        "What are design systems, and why are they important?",
+        "Explain the role of wireframes in the design process.",
+        "What is accessibility in design, and why does it matter?",
+        "How do you create a responsive design?",
+        "What is the importance of color theory in UI design?",
+        "How do you measure the success of a design?"
+      ]
+    }
+  }
+}
